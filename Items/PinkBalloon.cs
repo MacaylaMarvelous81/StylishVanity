@@ -31,8 +31,8 @@ namespace StylishVanity.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.ShinyRedBalloon);
-			recipe.AddIngredient(ItemID.PinkPricklyPear);
+			recipe.AddIngredient(ItemID.ShinyRedBalloon, 1);
+			recipe.AddIngredient(ItemID.PinkPricklyPear, 1);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
