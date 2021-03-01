@@ -39,7 +39,7 @@ namespace StylishVanity.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.GoldBar, 15);
-			recipe.AddIngredient(ItemID.Ruby, 1);
+			recipe.AddIngredient(ItemID.Ruby);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

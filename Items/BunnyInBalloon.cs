@@ -4,18 +4,18 @@ using Terraria.ModLoader;
 
 namespace StylishVanity.Items
 {
-	public class PinkBalloon : ModItem
+	public class BunnyInBalloon : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("TirzahTheWhale's Pink Balloon");
-			Tooltip.SetDefault("A balloon dedicated to TirzahTheWhale.");
+			DisplayName.SetDefault("Bunny in a Balloon");
+			Tooltip.SetDefault("How dare you!");
 		}
 		public override void SetDefaults()
 		{
 			item.width = 18;
 			item.height = 32;
-			item.value = 17000; // 1 Gold 70 Silver
+			item.value = 5500; // 55 Silver
 			item.rare = 1; // Blue
 			item.vanity = true;
 			item.holdStyle = 1; // When selected hold like torches
@@ -33,8 +33,7 @@ namespace StylishVanity.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.ShinyRedBalloon);
-			recipe.AddIngredient(ItemID.PinkPricklyPear);
-			recipe.AddTile(TileID.TinkerersWorkbench);
+			recipe.AddIngredient(ItemID.Bunny);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
