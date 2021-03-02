@@ -16,7 +16,7 @@ namespace StylishVanity.Items
 			item.width = 18;
 			item.height = 32;
 			item.value = 5500; // 55 Silver
-			item.rare = 1; // Blue
+			item.rare = ItemRarityID.Blue;
 			item.vanity = true;
 			item.holdStyle = 1; // When selected hold like torches
 		}

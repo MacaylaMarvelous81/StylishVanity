@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using StylishVanity.Items;
+using StylishVanity.Items.Armor;
 
 namespace StylishVanity.NPCs
 {
