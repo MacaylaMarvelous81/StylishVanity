@@ -1,4 +1,4 @@
-name: Push on Master jobs
+name: Master push jobs
 
 on:
   push:
