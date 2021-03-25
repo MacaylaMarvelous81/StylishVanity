@@ -62,6 +62,10 @@ namespace StylishVanity.Items.Armor
 		{
 			// Spawn dust 1/10 of the time
 			if (Main.rand.Next(10) == 0) {
+				/*
+				 * @todo Update to DustID
+				 * @body Update to DustID if tmodLoader/tModLoader$1343 is merged and tModLoader updates to 1.4
+				*/
 				Dust.NewDust(player.position, player.width, player.height, 133);
 			}
 		}

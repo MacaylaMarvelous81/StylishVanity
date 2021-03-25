@@ -1,4 +1,5 @@
 displayName = Stylish Vanity
 author = TheLegendaryOrb
-version = 1.0.1.15
+version = 1.0.1.16
 homepage = https://github.com/MacaylaMarvelous81/StylishVanity/blob/master/README.md
+includeSource = true
