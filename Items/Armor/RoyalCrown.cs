@@ -12,17 +12,17 @@ namespace StylishVanity.Items.Armor
 		}
 		public override void SetDefaults()
 		{
-			item.width = 30;
-			item.height = 22;
-			item.value = 10000; // 1 Gold
-			item.rare = ItemRarityID.Orange;
-			item.vanity = true;
+			Item.width = 30;
+			Item.height = 22;
+			Item.value = 10000; // 1 Gold
+			Item.rare = ItemRarityID.Orange;
+			Item.vanity = true;
 		}
 		public override bool CanUseItem(Player player)
 		{
 			return false;
 		}
-		public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
+		public override void DrawHair(ref bool drawHair, ref bool drawAltHair)/* tModPorter Note: Removed. In SetStaticDefaults, use ArmorIDs.Head.Sets.DrawFullHair[Item.headSlot] = true if you had drawHair set to true, and ArmorIDs.Head.Sets.DrawHatHair[Item.headSlot] = true if you had drawAltHair set to true */
 		{
 			drawHair = true;
 		}
@@ -67,12 +67,11 @@ namespace StylishVanity.Items.Armor
 		}
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.GoldBar, 15);
 			recipe.AddIngredient(ItemID.Ruby);
 			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			recipe.Register();
 		}
 	}
 }

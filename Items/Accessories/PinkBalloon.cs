@@ -13,13 +13,13 @@ namespace StylishVanity.Items.Accessories
 		}
 		public override void SetDefaults()
 		{
-			item.width = 18;
-			item.height = 32;
-			item.value = 17000; // 1 Gold 70 Silver
-			item.rare = ItemRarityID.Blue;
+			Item.width = 18;
+			Item.height = 32;
+			Item.value = 17000; // 1 Gold 70 Silver
+			Item.rare = ItemRarityID.Blue;
 			// item.vanity = true;
-			item.holdStyle = 1; // When selected hold like torches
-			item.accessory = true;
+			Item.holdStyle = 1; // When selected hold like torches
+			Item.accessory = true;
 		}
 		public override bool CanUseItem(Player player)
 		{
@@ -44,12 +44,11 @@ namespace StylishVanity.Items.Accessories
         }
         public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.ShinyRedBalloon);
 			recipe.AddIngredient(ItemID.PinkPricklyPear);
 			recipe.AddTile(TileID.TinkerersWorkbench);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			recipe.Register();
 		}
 	}
 }
