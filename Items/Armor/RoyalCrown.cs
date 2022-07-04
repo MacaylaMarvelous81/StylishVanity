@@ -25,8 +25,8 @@ namespace StylishVanity.Items.Armor
 		}
 		public override void EquipFrameEffects(Player player, EquipType type)
 		{
-			// Spawn dust 1/10 of the time
-			if (Main.rand.Next(10) == 0) {
+			// Spawn dust 1/10th of the time
+			if (Main.rand.NextBool(10)) {
 				Dust.NewDust(player.position, player.width, player.height, DustID.Firework_Yellow);
 			}
 		}
